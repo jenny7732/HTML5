@@ -1,5 +1,5 @@
 @import url(./normalize.css);
-@import url(./reset.css);
+/* @import url(./reset.css); */
 
 /* 기본 스타일 */
 *, *::before, *::after{
@@ -8,7 +8,7 @@
 
 /* 본문 스타일 */
 body {
-  background:#ffc;
+  background:#ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;  
 }
 /* 레이아웃 */
@@ -18,10 +18,25 @@ body {
 }
 /* 헤더 */
 .header{
-  background: pink;
+  background: #fff;
   padding: 0 30px;
   height: 15vh;
+  border-radius: 0 0 15px 15px;
+  position: relative;
 }
+
+/* 로고 */
+.logo{
+  position: absolute;
+  top: 45px;
+  left: 60px;
+}
+
+/* 텍스트 링크 모음 */
+.member{
+  background-color: aqua;
+}
+
 /* 비주얼 */
 .visual{
   background: orange;
@@ -30,14 +45,14 @@ body {
 /* 메인 */
 .main {
   background: lightgreen;
-  height: 50vh;
-  display: flow-root;
-  padding: 0 15px;
-}
-
-.group{
-  margin: 0 15px;
-  float: left;
+  min-height: 450px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  
 }
 
 .group1{
