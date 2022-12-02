@@ -31,13 +31,8 @@ body {
 .main {
   background: lightgreen;
   height: 50vh;
-  display: flow-root;
-  padding: 0 15px;
-}
-
-.group{
-  margin: 0 15px;
-  float: left;
+  display: flex;
+  flex-direction: row;
 }
 
 .group1{
@@ -53,6 +48,7 @@ body {
 .group3{
   background-color: gold;
   width: 190px;
+  order: -1;
 }
 /* 슬로건 */
 .slogan{
