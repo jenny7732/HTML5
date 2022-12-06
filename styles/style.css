@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 /* 링크 스타일 */
 a {
   color: inherit;
@@ -16,6 +20,8 @@ a {
 
 /* 본문 스타일 */
 body {
+  /* em, rem 단위를 사용해보기 */
+  font-size: 1.4rem;
   color: #212121;
   background: #ccc;
   font-family: "Pretendard Variable", Pretendard, -apple-system,
@@ -38,7 +44,6 @@ body {
 .header {
   background: #fff;
   padding: 0 30px;
-  height: 15vh;
   border-radius: 0 0 15px 15px;
   position: relative;
 }
@@ -57,7 +62,7 @@ body {
   /* position 속성을 활용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기 */
   /* position: relative;
   right: -10px; */
-  /* transform  속성을 활용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기*/
+  /* transform 속성을 활용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기 */
   transform: translateX(10px);
 }
 
